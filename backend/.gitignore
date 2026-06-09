@@ -1,0 +1,12 @@
+/vendor
+.env
+.env.*
+!.env.example
+/storage/*.key
+/public/storage
+/node_modules
+/.phpunit.cache
+composer.lock
+*.log
+.idea/
+.vscode/
