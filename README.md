@@ -110,3 +110,13 @@ cd backend
 composer install
 cp .env.example .env
 php artisan key:generate
+3. Configuration Base de données
+Modifier le fichier .env:
+
+env
+DB_CONNECTION=mongodb
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_DATABASE=etat_civil
+DB_USERNAME=
+DB_PASSWORD=
