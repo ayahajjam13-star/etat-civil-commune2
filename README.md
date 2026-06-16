@@ -139,6 +139,21 @@ Terminal 1 - Backend:
 bash
 cd backend
 php artisan serve --port=8001
+4. Migrations et Seeders
+bash
+php artisan migrate
+php artisan db:seed --class=AdminUserSeeder
+php artisan storage:link
+5. Configuration Frontend (React)
+bash
+cd ../frontend
+npm install
+6. Démarrer l'application
+Terminal 1 - Backend:
+
+bash
+cd backend
+php artisan serve --port=8001
 Terminal 2 - Frontend:
 
 bash
@@ -257,3 +272,5 @@ Cette application constitue une solution complète et professionnelle pour la ge
 
 📞 Contact
 Pour toute question ou suggestion concernant ce projet, n'hésitez pas à me contacter.
+
+© 2026 - Système de Gestion d'État Civil - Commune Marocaine
