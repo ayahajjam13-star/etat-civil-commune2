@@ -3,7 +3,7 @@
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-purple.svg)](https://getbootstrap.com)
-[![MySQL](https://img.shields.io/badge/MySQL-8.x-orange.svg)](https://mysql.com)
+[![MongoDB](https://img.shields.io/badge/MongoDB-8.x-green.svg)](https://mongodb.com)
 
 ## 📝 Description du Projet
 
@@ -23,7 +23,7 @@ Application web complète pour la gestion de l'état civil d'une commune marocai
 | **Laravel** | 12.x | API REST Backend |
 | **React.js** | 18.x | Frontend moderne |
 | **Bootstrap 5** | 5.3 | Interface responsive |
-| **MySQL** | 8.x | Base de données |
+| **MongoDB** | 8.x | Base de données |
 | **Axios** | - | Communication API |
 | **React Router** | 6.x | Navigation |
 | **React Toastify** | - | Notifications |
@@ -100,37 +100,15 @@ Application web complète pour la gestion de l'état civil d'une commune marocai
 - PHP >= 8.2
 - Composer
 - Node.js >= 18
-- MySQL >= 8.0
+- MongoDB >= 8.0
 
 ### Étapes d'installation
 
 #### 1. Cloner le projet
-## ⚠️ Problèmes possibles et solutions
-
-### Erreur "Connection refused" (MySQL)
-**Solution:** Démarrez MySQL dans XAMPP/WAMP.
-
-### Erreur "Address already in use" (port 8001)
-**Solution:** Changez le port:
 ```bash
-php artisan serve --port=8002
-Erreur "No application encryption key"
-Solution:
-
-bash
-php artisan key:generate
-Erreur "Table 'cache' doesn't exist"
-Solution:
-
-bash
-php artisan cache:table
-php artisan migrate
-
-```bash
-git clone https://github.com/ayahajjam13-star/etat-civil-commune1.git
-cd etat-civil-commune1
+git clone https://github.com/ayahajjam13-star/etat-civil-commune2.git
+cd etat-civil-commune2
 2. Configuration Backend (Laravel)
-
 bash
 cd backend
 composer install
@@ -140,14 +118,13 @@ php artisan key:generate
 Modifier le fichier .env:
 
 env
-DB_CONNECTION=mysql
+DB_CONNECTION=mongodb
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=27017
 DB_DATABASE=etat_civil
-DB_USERNAME=root
+DB_USERNAME=
 DB_PASSWORD=
 4. Migrations et Seeders
-
 bash
 php artisan migrate
 php artisan db:seed --class=AdminUserSeeder
@@ -172,12 +149,9 @@ Champ	Valeur
 Email	admin@commune.ma
 Mot de passe	admin123
 📱 Accès à l'application
-Frontend: http://127.0.0.1:3000
-
-API Backend: http://127.0.0.1:8001/api
-
-phpMyAdmin: http://localhost/phpmyadmin
-
+Service	URL
+Frontend	http://127.0.0.1:3000
+API Backend	http://127.0.0.1:8001/api
 🗂️ Structure du projet
 text
 etat-civil-commune/
@@ -229,14 +203,12 @@ id, citoyen_id, type_demande, date_demande, statut, created_at, updated_at
 
 🛠️ Commandes utiles
 Backend:
-
 bash
 php artisan serve --port=8001      # Démarrer le serveur
 php artisan migrate:refresh        # Réinitialiser la DB
 php artisan tinker                 # Console interactive
 php artisan config:clear           # Vider le cache
 Frontend:
-
 bash
 npm start        # Démarrer le serveur de développement
 npm run build    # Construire pour production
@@ -264,6 +236,7 @@ Tableaux scrollables
 
 👨‍💻 Auteur
 Ayah Hajjam
+
 Étudiante en développement web
 
 📅 Année
@@ -284,5 +257,3 @@ Cette application constitue une solution complète et professionnelle pour la ge
 
 📞 Contact
 Pour toute question ou suggestion concernant ce projet, n'hésitez pas à me contacter.
-
-© 2026 - Système de Gestion d'État Civil - Commune Marocaine
