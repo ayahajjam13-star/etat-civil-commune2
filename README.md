@@ -139,21 +139,6 @@ Terminal 1 - Backend:
 bash
 cd backend
 php artisan serve --port=8001
-4. Migrations et Seeders
-bash
-php artisan migrate
-php artisan db:seed --class=AdminUserSeeder
-php artisan storage:link
-5. Configuration Frontend (React)
-bash
-cd ../frontend
-npm install
-6. Démarrer l'application
-Terminal 1 - Backend:
-
-bash
-cd backend
-php artisan serve --port=8001
 Terminal 2 - Frontend:
 
 bash
