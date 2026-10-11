@@ -9,6 +9,15 @@
 
 Application web complète pour la gestion de l'état civil d'une commune marocaine. Ce système permet aux administrateurs de gérer les citoyens et leurs demandes administratives de manière efficace et moderne.
 
+## 📸 Aperçu de l'Application
+<img width="1346" height="562" alt="image" src="https://github.com/user-attachments/assets/f355b0c7-6468-4f09-96a7-41dfbbe6f2de" />
+
+
+<img width="1192" height="670" alt="image" src="https://github.com/user-attachments/assets/9c4d5ce7-d766-4033-bd1e-75aac1a80ec9" />
+
+<img width="1192" height="670" alt="image" src="https://github.com/user-attachments/assets/f1ca8a1b-fdfd-4c0c-9e9f-48f26d732963" />
+
+
 ## 🎯 Objectifs du Projet
 
 - ✅ Digitaliser la gestion des citoyens
